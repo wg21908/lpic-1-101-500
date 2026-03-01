@@ -1,4 +1,4 @@
-# Files, Terms & Utilities
+# Other Files, Terms & Utilities
 
 Linux Installation and Package Management
 
