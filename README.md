@@ -24,9 +24,7 @@
 |What type of filesystem is /sys?|Virtual filesystem (sysfs)|
 |What is lsusb?|Lists USB (Universal Serial Bus) devices currently connected to the machine.|<br />the USB interface is largely used to connect input devices — keyboards, pointing devices — and removable storage media|
 |Where does lsusb read data from?|/sys/bus/usb and /proc/bus/usb|
-|What does lsusb show?|All connected USB devices, Vendor ID, Product ID, Device description, Bus number and device number|
-|For lsusb, `Bus 002 Device 003: ID 046d:c534 Logitech, Inc.` 
-
+|What does lsusb show?|All connected USB devices, Vendor ID, Product ID, Device description, Bus number and device number<br />For lsusb, `Bus 002 Device 003: ID 046d:c534 Logitech, Inc.`|
 |Show lsusb with verbosity|lsusb -v|
 |Show lsusb in tree view|lsusb -t|
 |Show a specifiy bus/device|lsusb -s 002:003|
