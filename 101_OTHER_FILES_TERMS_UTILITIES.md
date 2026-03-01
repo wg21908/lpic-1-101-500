@@ -8,10 +8,6 @@ System Architecture
 
 | Category | Item     | Definition | Purpose |
 |----------|----------|------------|----------|
-| Command | lsusb | Lists USB buses and devices connected to the system. | Used to identify and troubleshoot USB hardware. |
-| Command | lspci | Lists PCI buses and attached devices. | Used to inspect PCI devices such as GPUs and network cards. |
-| Command | lsmod | Displays currently loaded kernel modules. | Used to verify which drivers are active in the running kernel. |
-| Command | modprobe | Loads or removes kernel modules with dependency handling. | Used to manage kernel modules safely with automatic dependency resolution. |
 | Command | rmmod | Removes a loaded kernel module from the kernel. | Used to manually unload a module. |
 | Command | insmod | Inserts a kernel module into the running kernel without resolving dependencies. | Used for manual module loading. |
 | Command | modinfo | Displays information about a kernel module. | Used to view module metadata, parameters, and dependencies. |
@@ -29,10 +25,8 @@ System Architecture
 | Virtual File | /proc/interrupts | Displays interrupt (IRQ) usage by devices. | Used to analyze hardware interrupt assignments. |
 | Virtual File | /proc/ioports | Lists I/O port allocations. | Used to inspect device I/O port usage. |
 | Virtual File | /proc/filesystems | Lists supported filesystems by the kernel. | Used to verify available filesystem support. |
-| Virtual Directory | /sys/ | Virtual filesystem (sysfs) exposing kernel device and driver data. | Used to interact with kernel-managed devices. |
 | Virtual Directory | /sys/class/ | Contains device class information in sysfs. | Used to view devices grouped by class (e.g., network, block). |
 | Virtual Directory | /sys/block/ | Contains block device information. | Used to inspect disks and storage devices. |
-| Directory | /dev/ | Directory containing device files. | Used to access hardware devices via special files. |
 | Device File | /dev/sda | First detected SATA/SCSI disk device. | Used to access primary storage device. |
 | Device File | /dev/sdb | Second detected SATA/SCSI disk device. | Used to access additional storage devices. |
 | Device File | /dev/nvme0n1 | First NVMe storage device. | Used to access NVMe SSDs. |
