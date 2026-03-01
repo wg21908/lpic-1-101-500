@@ -1,0 +1,55 @@
+Front|Back|Type|Topic
+What virtual filesystem exposes kernel device and driver information?|/sys/|file|101.1
+Where can you view process and kernel runtime information?|/proc/|file|101.1
+Where are device files located in Linux?|/dev/|file|101.1
+Which command loads a kernel module?|modprobe|utility|101.1
+Which command lists loaded kernel modules?|lsmod|utility|101.1
+Which command lists PCI devices?|lspci|utility|101.1
+Which command lists USB devices?|lsusb|utility|101.1
+Is the 'Partial list of the used files, terms and utilities' exhaustive?|No. It highlights core tools but does not define the limits of what may appear on the exam.|term|101
+Should you study only items in the partial list for LPIC-1 Topic 101?|No. You must also understand related commands mentioned in objectives, lessons, and exercises.|term|101
+Which command lists block devices?|lsblk|utility|101.1
+Which command shows detailed hardware information?|lshw|utility|101.1
+Which command displays hardware info on many distros?|hwinfo|utility|101.1
+Which command prints kernel version information?|uname|utility|101.1
+Which file shows CPU information?|/proc/cpuinfo|file|101.1
+Which file shows memory information?|/proc/meminfo|file|101.1
+Which file lists loaded kernel modules?|/proc/modules|file|101.1
+Which file shows IRQ assignments?|/proc/interrupts|file|101.1
+Which command inserts a kernel module directly?|insmod|utility|101.1
+Which command removes a loaded kernel module?|rmmod|utility|101.1
+Which command displays information about a kernel module?|modinfo|utility|101.1
+Which command displays kernel ring buffer messages?|dmesg|utility|101.2
+Which command queries systemd journal logs?|journalctl|utility|101.2
+What firmware replaced legacy BIOS on modern systems?|UEFI|term|101.2
+What legacy firmware initializes hardware before booting the OS?|BIOS|term|101.2
+What program loads the kernel during system startup?|Bootloader|term|101.2
+What is the core component of the Linux operating system?|Kernel|term|101.2
+What temporary filesystem is used during early boot before the real root filesystem mounts?|initramfs|term|101.2
+What was the traditional init system using numbered runlevels?|SysVinit|term|101.2
+What is the modern Linux service and init system used by most distributions?|systemd|term|101.2
+Which command is the parent process (PID 1) in SysV systems?|init|utility|101.2
+Which command installs GRUB to a disk?|grub-install|utility|101.2
+Which command regenerates the GRUB configuration file?|grub-mkconfig|utility|101.2
+Where is the GRUB configuration file typically stored?|/boot/grub/grub.cfg|file|101.2
+Where are EFI boot files usually mounted?|/boot/efi/|file|101.2
+What file contains default GRUB settings?|/etc/default/grub|file|101.2
+What file name represents the Linux kernel image?|vmlinuz|term|101.2
+What target boots into rescue mode in systemd?|rescue.target|term|101.2
+What target boots into emergency mode in systemd?|emergency.target|term|101.2 
+Which file defines runlevels in SysV systems?|/etc/inittab|file|101.3
+Where are SysV init scripts stored?|/etc/init.d/|file|101.3
+Where are system-wide systemd unit files stored?|/etc/systemd/|file|101.3
+Where are distribution-provided systemd unit files stored?|/usr/lib/systemd/|file|101.3
+Which command changes runlevels in SysV systems?|telinit|utility|101.3
+Which command schedules a system shutdown or reboot?|shutdown|utility|101.3
+Which command controls systemd units and targets?|systemctl|utility|101.3
+Which command sends a message to all logged-in users?|wall|utility|101.3
+Which command shows the current runlevel?|runlevel|utility|101.3
+Which command displays runlevel information using who?|who -r|utility|101.3
+Which command immediately reboots the system?|reboot|utility|101.3
+Which command halts the system?|halt|utility|101.3
+Which command powers off the system?|poweroff|utility|101.3
+Which command changes the active systemd target immediately?|systemctl isolate|utility|101.3
+Which command sets the default systemd target?|systemctl set-default|utility|101.3
+Which directory contains SysV runlevel 3 scripts?|/etc/rc3.d/|file|101.3
