@@ -1,6 +1,6 @@
 # Files, Terms & Utilities
 
-System Architecture
+Linux Installation and Package Management
 
 [Back](README.md)
 
