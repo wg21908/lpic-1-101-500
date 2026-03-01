@@ -1,6 +1,6 @@
 # Files, Terms & Utilities
 
-System Architecture
+GNU and Unix Commands
 
 [Back](README.md)
 
