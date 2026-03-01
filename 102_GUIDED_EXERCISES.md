@@ -41,13 +41,35 @@ Linux Installation and Package Management
 
 ## Topic 102.4
 
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | What is the command to install a package named package.deb using dpkg? | Pass the -i parameter to dpkg:<br><br>`# dpkg -i package.deb` |
+| 2 | Using dpkg-query, find which package contains a file named 7zr.1.gz. | Add the -S parameter to dpkg-query:<br><br>`# dpkg-query -S 7zr.1.gz` |
+| 3 | Can you remove a package called unzip from the system using dpkg -r unzip if the package file-roller depends on it? If not, what would be the correct way to do it? | No. dpkg will not resolve dependencies, and will not let you remove a package if another installed package depends on it. In this example, you could first remove file-roller (assuming nothing depends on it) and then remove unzip, or remove both at the same time with:<br><br>`# dpkg -r unzip file-roller` |
+| 4 | How can you find out which package contains the file /usr/bin/unrar using the apt-file utility? | Use the search parameter followed by the path (or filename):<br><br>`# apt-file search /usr/bin/unrar` |
+| 5 | Using apt-cache, what is the command to show information for the package gimp? | Use the show parameter followed by the package name:<br><br>`# apt-cache show gimp` |
+
 [Back](README.md)
 
 ## Topic 102.5
 
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Using rpm on a Red Hat Enterprise Linux system, how would you install the package file-roller-3.28.1-2.el7.x86_64.rpm showing a progress bar during the installation? | Use the -i parameter to install a package, and the -h option to enable “hash marks” showing installation progress. So, the answer is: `rpm -ih file-roller-3.28.1-2.el7.x86_64.rpm`. |
+| 2 | Using rpm, find out which package contains the file /etc/redhat-release. | You are querying information about a file, so use the -qf parameter: `rpm -qf /etc/redhat-release`. |
+| 3 | How would you use yum to check for updates for all packages in the system? | Use the check-update operation without a package name: `yum check-update`. |
+| 4 | Using zypper, how would you disable a repository called repo-extras? | Use the modifyrepo operation to change the parameters of a repo, and the -d parameter to disable it: `zypper modifyrepo -d repo-extras`. |
+| 5 | If you have a .repo file describing a new repository, where this file should be put so that it is recognized by DNF? | .repo files for DNF should be put on the same place used by YUM, inside `/etc/yum.repos.d/`. |
+
 [Back](README.md)
 
 ## Topic 102.6
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | What CPU extensions are necessary on an x86 based hardware platform that will run fully virtualized guests? | VT-x for Intel CPUs or AMD-V for AMD CPUs |
+| 2 | A mission-critical server installation that will require the fastest performance will likely use what type of virtualization? | An operating system that makes use of paravirtualization, such as Xen, as the guest operating system can make better use of hardware resources available to it through the use of software drivers designed to work with the hypervisor. |
+| 3 | Two virtual machines that have been cloned from the same template and that utilize D-Bus are performing erratically. They both have separate hostnames and network configuration settings. What command would be used to determine if each of the virtual machines have different D-Bus Machine IDs? | `dbus-uuidgen --get` |
 
 [Back](README.md)
   
