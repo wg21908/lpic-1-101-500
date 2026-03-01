@@ -6,8 +6,6 @@ Which command loads a kernel module?|modprobe|utility|101.1
 Which command lists loaded kernel modules?|lsmod|utility|101.1
 Which command lists PCI devices?|lspci|utility|101.1
 Which command lists USB devices?|lsusb|utility|101.1
-Is the 'Partial list of the used files, terms and utilities' exhaustive?|No. It highlights core tools but does not define the limits of what may appear on the exam.|term|101
-Should you study only items in the partial list for LPIC-1 Topic 101?|No. You must also understand related commands mentioned in objectives, lessons, and exercises.|term|101
 Which command lists block devices?|lsblk|utility|101.1
 Which command shows detailed hardware information?|lshw|utility|101.1
 Which command displays hardware info on many distros?|hwinfo|utility|101.1
